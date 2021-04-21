@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f06b392053.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Website Makers</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="./video.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Naver Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus iste unde accusantium natus
+                doloribus sint dolores blanditiis quo eum atque?</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/wang.hao.14289210/"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/wanghao31276989"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://pai-daxing.tumblr.com/"><i class="fab fa-tumblr"></i></a></li>
+			<li><a href="https://github.com/wanghao221"><i class="fab fa-github"></i></a></li>
+			<li><a href="https://codepen.io/haiyong"><i class="fab fa-codepen"></i></a></li>
+			<li><a href="https://dev.to/wanghao221"><i class="fab fa-dev"></i></a></li>
+			<li><a href="https://www.youtube.com/channel/UCBaEYH1qonbq3_ftWzUwF1w"><i class="fab fa-youtube"></i></a></li>
+			<li><a href="https://www.linkedin.com/in/wang-hao-666544204/"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+</body>
+
+</html>
